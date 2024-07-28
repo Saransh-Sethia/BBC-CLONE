@@ -13,7 +13,7 @@ const Signin = () => {
       await signInWithPopup(auth, googleProvider)
       auth.currentUser && navigate("/")
     }catch(error){
-      console.log(error)
+      console.log(error, error.message)
     }
 console.log(auth)
   }

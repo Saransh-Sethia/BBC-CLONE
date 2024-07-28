@@ -12,7 +12,7 @@ const Home = ({ menu, search }) => {
 
   const getNews = async () => {
     const response = await axios.get(
-      `http://newsapi.org/v2/everything?q=${
+      `https://newsapi.org/v2/everything?q=${
         menu ? menu : "bitcoin"
       }&sortBy=popularity&apiKey=defc48fb054f4f0590915bae7cd8a726`
     );
